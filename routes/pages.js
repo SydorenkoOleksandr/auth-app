@@ -51,6 +51,9 @@ router.get('/register', (req, res) =>{
 router.get('/login', (req, res) =>{
     res.render('login')
 })
+router.get('/', (req, res) =>{
+    res.render('register')
+})
 router.get('/logout', (req, res) =>{
     function eraseCookieFromAllPaths(name) {
       
