@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Awesome register</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <h1>Awesome register form</h1>
+        <ul>
+            <li><a href="/index">User list</a></li>
+            <li><a href="/register">Registration </a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+
+    </nav>
+    <div class="container">
+        <form action="/auth/register" method="POST">
+            <div class="login">
+                <h2>Are you ready to register in the best web app in the Universe? </h2>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Your name">
+                <input class="form-control" type="text" name="login" id="login" placeholder="Your login">
+                <input class="form-control" type="password" name="password" id="password"
+                    placeholder="Your password" >
+
+                <div class="form-group">
+                    <label for="passwordConfirm"></label>
+                    <input class="form-control" type="password" name="passwordConfirm" id="passwordConfirm" 
+                    placeholder="Confirm password">
+                </div>    
+                
+                <button class="btn" type="submit">OK</button>
+            </div>
+
+        </form>
+    </div>
+
+    {{#if message }}
+    <h4 class="alert"> {{ message }}</h4>
+
+    {{/if}}
+</body>
+
+</html>

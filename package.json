@@ -1,0 +1,26 @@
+{
+  "name": "it-craft-test-task",
+  "version": "1.0.0",
+  "description": "mern register, auth, main page",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "server": "nodemon app.js"
+  },
+  "author": "Aleksandr Sydirenko <semidenisjj@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
